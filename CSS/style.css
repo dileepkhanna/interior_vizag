@@ -396,6 +396,10 @@
     color: white;
 }
 
+.nav-bar-container {
+    padding: 0 20px;
+}
+
 
 /* Responsive Navigation */
 
@@ -431,6 +435,10 @@
     }
     .dropdown {
         display: none;
+    }
+    .nav-bar-left {
+        width: 100%;
+        justify-content: space-between;
     }
     .a-tag:hover {
         color: var(--primary);
