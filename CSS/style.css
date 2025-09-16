@@ -582,10 +582,6 @@
     justify-content: center;
 }
 
-.OtherDetails_otherDetails__hqyOv li:first-child {
-    border-left: none;
-}
-
 .OtherDetails_otherDetails__hqyOv li figure {
     margin: 0 auto 10px;
     width: clamp(35px, 8vw, 45px);
