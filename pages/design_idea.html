@@ -118,7 +118,6 @@
                     <br>
                     <hr style="border-color: #FC8BC0;">
 
-
                 </div>
                 <br>
                 <main class="grid" id="grid" aria-live="polite"></main>
@@ -323,7 +322,7 @@
             }, {
                 title: 'Living Room Designs',
                 desc: 'Design a living room that’s a perfect reflection of your style, where comfort meets elegance.',
-                img: '/images/living_room/img1.jpg',
+                img: 'https://i.postimg.cc/xC1zxJw7/img3.jpg',
                 tags: ['Design'],
                 link: '/DESIGNS/Living_room_design.html'
             }, {
@@ -335,7 +334,7 @@
             }, {
                 title: 'Wardrobe Designs',
                 desc: 'Organize your world in style with our bespoke wardrobe designs, crafted for elegance and efficiency.',
-                img: '/images/Wardrobe/img1.jpg',
+                img: 'https://i.postimg.cc/xT3g4Hhj/img4.jpg',
                 tags: ['Design'],
                 link: '/DESIGNS/wardrobe_design.html'
             }, {
@@ -371,7 +370,7 @@
             }, {
                 title: 'Balcony Designs',
                 desc: 'Transform your balcony into a private oasis for relaxation and breathtaking views.',
-                img: '/images/Balcony/img1.jpg',
+                img: 'https://i.postimg.cc/zBcdDr5d/img8.jpg',
                 tags: ['Design'],
                 link: '/DESIGNS/Balcony_design.html'
             }, {
@@ -395,7 +394,7 @@
             }, {
                 title: 'Kitchen False Ceiling Designs',
                 desc: 'Brighten your culinary space with innovative kitchen false ceiling designs for a refined look.',
-                img: '/images/Kitchen_false_ceiling/img8.jpg',
+                img: 'https://i.postimg.cc/MpHgSdyK/img10.jpg',
                 tags: ['Design'],
                 link: '/DESIGNS/kitchen_false_ceiling_design.html'
             }, {
@@ -479,42 +478,44 @@
       items.push(data);
       render(items);
     }
-     (function() {
-     const hamburgerToggle = document.getElementById("hamburgerToggle");
-     const mobileNavOverlay = document.getElementById("mobileNavOverlay");
-     const closeMobileNav = document.getElementById("closeMobileNav");
+    </script>
+    <script>
+        (function() {
+            const hamburgerToggle = document.getElementById("hamburgerToggle");
+            const mobileNavOverlay = document.getElementById("mobileNavOverlay");
+            const closeMobileNav = document.getElementById("closeMobileNav");
 
-     if (!hamburgerToggle || !mobileNavOverlay) return;
+            if (!hamburgerToggle || !mobileNavOverlay) return;
 
-     function openMobileNav() {
-         hamburgerToggle.classList.add("active");
-         mobileNavOverlay.classList.add("active");
-         document.body.style.overflow = "hidden";
-     }
+            function openMobileNav() {
+                hamburgerToggle.classList.add("active");
+                mobileNavOverlay.classList.add("active");
+                document.body.style.overflow = "hidden";
+            }
 
-     function closeMobileNavigation() {
-         hamburgerToggle.classList.remove("active");
-         mobileNavOverlay.classList.remove("active");
-         document.body.style.overflow = "";
-     }
+            function closeMobileNavigation() {
+                hamburgerToggle.classList.remove("active");
+                mobileNavOverlay.classList.remove("active");
+                document.body.style.overflow = "";
+            }
 
-     hamburgerToggle.addEventListener("click", openMobileNav);
-     closeMobileNav.addEventListener("click", closeMobileNavigation);
+            hamburgerToggle.addEventListener("click", openMobileNav);
+            closeMobileNav.addEventListener("click", closeMobileNavigation);
 
-     // Close on overlay click
-     mobileNavOverlay.addEventListener("click", function(e) {
-         if (e.target === mobileNavOverlay) {
-             closeMobileNavigation();
-         }
-     });
+            // Close on overlay click
+            mobileNavOverlay.addEventListener("click", function(e) {
+                if (e.target === mobileNavOverlay) {
+                    closeMobileNavigation();
+                }
+            });
 
-     // Close on escape key
-     document.addEventListener("keydown", function(e) {
-         if (e.key === "Escape" && mobileNavOverlay.classList.contains("active")) {
-             closeMobileNavigation();
-         }
-     });
- })();
+            // Close on escape key
+            document.addEventListener("keydown", function(e) {
+                if (e.key === "Escape" && mobileNavOverlay.classList.contains("active")) {
+                    closeMobileNavigation();
+                }
+            });
+        })();
     </script>
     <script src="/JS/script.js"></script>
 </body>

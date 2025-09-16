@@ -927,11 +927,15 @@
 }
 
 @media screen and (max-width:1024px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+    }
     .FactoryJourney_futMinboxhead__gsn_k {
         margin: 26px 0
     }
     .FactoryJourney_funtMiantextbox__8WeEg .FactoryJourney_stepFacthed___g_9p {
-        margin-bottom: 16px;
+        margin-top: 16px;
         font-size: 24px
     }
     .FactoryJourney_funtMiantextbox__8WeEg {
@@ -942,6 +946,10 @@
 }
 
 @media screen and (max-width:768px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+    }
     .FactoryJourney_funtMiantextbox__8WeEg .FactoryJourney_stepFacthed___g_9p {
         font-size: 20px;
         margin-bottom: 5px
@@ -959,14 +967,17 @@
     .FactoryJourney_funmboRepoimbox__TwUKZ {
         display: block
     }
-    .FactoryJourney_funMinimgbox__66aUp {
+    /* .FactoryJourney_funMinimgbox__66aUp {
         display: none
-    }
+    } */
     .FactoryJourney_funtLowmianbox__cCCm9 {
-        flex-direction: column-reverse
+        display: flexbox;
+        flex-direction: column;
+        gap: 30px;
     }
     .FactoryJourney_funLftloerbox__DzO_N {
         width: 100%;
+        display: inline-block;
     }
     .FactoryJourney_funRgtlowemainbox__CwBL5 {
         width: 100%;
@@ -974,31 +985,27 @@
     }
     .FactoryJourney_funmboRepoimbox__TwUKZ img,
     .FactoryJourney_funtMiantextbox__8WeEg {
-        width: 100%
+        width: 100%;
     }
     .FactoryJourney_funtMiantextbox__8WeEg .FactoryJourney_stepFacthed___g_9p {
-        font-size: 20px;
-        margin-bottom: 0
+        font-size: 40px;
+        margin-top: 50px
     }
     .FactoryJourney_funtMiantextbox__8WeEg p {
         font-size: 26px;
-        line-height: 30px
+        line-height: 30px;
     }
     .FactoryJourney_funtMiantextbox__8WeEg {
         padding: 16px;
         left: 0;
-        top: 0
-    }
-    .FactoryJourney_futMinboxhead__gsn_k {
-        margin-bottom: 0;
-        background-image: linear-gradient(258deg, #7f279f 100%, #1c2f59 0)
     }
     .FactoryJourney_futMinboxhead__gsn_k h3 {
         padding: 16px;
-        color: #fff;
-        font-size: 20px;
+        color: #000000;
+        font-size: 25px;
         text-align: left;
-        line-height: 24px
+        line-height: 24px;
+        display: block;
     }
     .FactoryJourney_funRgtlowemainbox__CwBL5 {
         border-left: none
@@ -2415,23 +2422,23 @@
 }
 
 .pro-div1 {
-    background-image: url('/images/360_degree_photos/img1.jpg');
+    background-image: url('https://i.postimg.cc/WbH2RDQr/img1.jpg');
 }
 
 .pro-div2 {
-    background-image: url('/images/360_degree_photos/img2.jpg');
+    background-image: url('https://i.postimg.cc/BnPJJS0z/img2.jpg');
 }
 
 .pro-div3 {
-    background-image: url('/images/360_degree_photos/img3.jpg');
+    background-image: url('https://i.postimg.cc/pTCHsyfm/img3.jpg');
 }
 
 .pro-div4 {
-    background-image: url('/images/360_degree_photos/img4.jpg');
+    background-image: url('https://i.postimg.cc/PxTHb1wG/img4.jpg');
 }
 
 .pro-div5 {
-    background-image: url('/images/360_degree_photos/img5.jpg');
+    background-image: url('https://i.postimg.cc/BvW46rZn/img5.jpg');
 }
 
 
@@ -2939,10 +2946,11 @@ footer {
 .WhatSetsUsApart_whatSetsList__3JQ2A li {
     height: 70px;
     display: flex;
-    align-items: center;
+    margin-bottom: 10px;
     font-size: 16px;
     color: #222;
-    justify-content: flex-end
+    justify-content: flex-start;
+    text-align: right;
 }
 
 .WhatSetsUsApart_whatSetsList__3JQ2A {
@@ -2975,8 +2983,9 @@ footer {
         height: 62px;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        text-align: right
+        justify-content: flex-start;
+        text-align: right;
+        margin-bottom: 0px;
     }
     .WhatSetsUsApart_experinceList__ZNqta .WhatSetsUsApart_setsList__Xt5h5 li {
         padding: 10px;
@@ -2995,7 +3004,7 @@ footer {
 
 @media screen and (max-width:540px) {
     .WhatSetsUsApart_whatSetsList__3JQ2A {
-        padding-top: 37px
+        padding-top: 37px;
     }
 }
 
