@@ -214,19 +214,20 @@
   
   .submit-button {
       padding: 1rem 2rem;
-      background: var(--color-text-primary);
-      color: var(--color-surface);
+      background: var(--primary);
+      color: var(--light);
       border: none;
       border-radius: 6px;
       font-size: 1rem;
       font-weight: 700;
       letter-spacing: 0.5px;
       cursor: pointer;
-      transition: background-color 0.3s;
+      transition: background-color 0.5s ease-in-out;
   }
   
   .submit-button:hover {
-      background-color: var(--color-accent);
+      background-color: var(--gray);
+      color: var(--primary);
   }
   
   #form-message {

@@ -140,10 +140,10 @@
                 <label for="opening">Current Openings <span>(required)</span></label>
                 <select id="opening" name="opening" required>
                         <option value="" disabled selected>Select an option</option>
-                        <option value="photographer">Photographer (Min 3 years experience)</option>
-                        <option value="cinematographer">Cinematographer (Min 3 years experience)</option>
-                        <option value="editor">Video Editor (Min 4 years experience)</option>
-                        <option value="manager">Studio Manager (Min 2 years experience)</option>
+                        <option value="photographer">Autocad Designer (Min 1 years experience)</option>
+                        <option value="cinematographer">Manager (Min 3 years experience)</option>
+                        <option value="editor">Team lead (Min 4 years experience)</option>
+                        <option value="manager">Field work manager (Min 2 years experience)</option>
                     </select>
             </div>
 
@@ -156,12 +156,6 @@
                 <label for="prof-portfolio">Link to your Professional Portfolio <span>(required)</span></label>
                 <input type="url" id="prof-portfolio" name="prof-portfolio" placeholder="https://..." required>
             </div>
-
-            <div class="form-group">
-                <label for="personal-portfolio">Link to your Personal Portfolio</label>
-                <input type="url" id="personal-portfolio" name="personal-portfolio" placeholder="https://...">
-            </div>
-
             <div class="form-group">
                 <label for="relocate">Open to relocate to Vishakapatnam? <span>(required)</span></label>
                 <select id="relocate" name="relocate" required>
@@ -365,6 +359,35 @@
         </div>
     </div>
 </footer>
+<script>
+    document.getElementById("career-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent page reload
+
+        // Get form values
+        let firstName = document.getElementById("first-name").value;
+        let lastName = document.getElementById("last-name").value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+        let city = document.getElementById("city").value;
+        let opening = document.getElementById("opening").value;
+        let aboutYou = document.getElementById("about-you").value;
+        let portfolio = document.getElementById("prof-portfolio").value;
+        let relocate = document.getElementById("relocate").value;
+
+        // Replace with your WhatsApp number (country code + number, no + or spaces)
+        let whatsappNumber = "919666696889";
+
+        // Build message
+        let message = `New Career Application:\n\n*First Name:* ${firstName}\n*Last Name:* ${lastName}\n*Email:* ${email}\n*Phone:* ${phone}\n*City:* ${city}\n*Applying For:* ${opening}\n*About:* ${aboutYou}\n*Portfolio:* ${portfolio}\n*Relocate to Vizag:* ${relocate}`;
+
+        // Open WhatsApp with message
+        let url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+
+        // Show confirmation inside form-message
+        document.getElementById("form-message").innerText = "Redirecting to WhatsApp...";
+    });
+</script>
 
 
 <script>
