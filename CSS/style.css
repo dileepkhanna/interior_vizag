@@ -55,7 +55,7 @@
     --space-xxl: clamp(3rem, 6vw, 6rem);
     /* Header Heights */
     --header-height: 80px;
-    --mobile-header-height: 60px;
+    --mobile-header-height: 90px;
 }
 
 

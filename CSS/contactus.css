@@ -55,11 +55,10 @@
       --space-xxl: clamp(3rem, 6vw, 6rem);
       /* Header Heights */
       --header-height: 80px;
-      --mobile-header-height: 60px;
+      --mobile-header-height: 90px;
   }
   
-  .contact_us_hero_section {
-      height: 50vh;
+  .contact_us_hero {
       display: flex;
       width: 100%;
       height: 70vh;
@@ -67,8 +66,8 @@
       justify-content: center;
       color: var(--color-text-light);
       text-align: center;
-      margin-top: 30px;
       z-index: -1;
+      margin-top: 0.1rem;
   }
   
   .contact_us_hero {
