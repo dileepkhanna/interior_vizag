@@ -20,6 +20,8 @@
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 12px;
+    padding-top: 0px;
+    margin-left: 0%;
 }
 
 .hero p {
@@ -28,12 +30,11 @@
 }
 
 .hero-section-container {
-    margin: 0;
-    /* no margins */
-    padding: 20px;
-    width: 100%;
-    /* take full width */
+    margin-top: 200px;
+    margin-left: 0%;
+    padding: 10px;
     text-align: left;
+    left: 0px;
     background-image: linear-gradient( to right, rgb(28, 48, 92), rgba(107, 101, 108, 0.1));
 }
 
