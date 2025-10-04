@@ -225,7 +225,7 @@
         padding: 40px 15px;
     }
     .story-card img {
-        height: 200px;
+        height: 100%;
     }
 }
 
@@ -252,7 +252,7 @@
         max-width: 100%;
     }
     .story-card img {
-        height: 190px;
+        height: 100%;
     }
 }
 
@@ -276,7 +276,7 @@
         font-size: 14px;
     }
     .story-card img {
-        height: 160px;
+        height: 100%;
     }
     .story-card h3 {
         font-size: 16px;
